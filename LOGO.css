@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+/*Navbar*/
+
+.navbar {
+  color: #d27d54;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 0px 20px #d27d54;
+  background-color: rgba(255,255,255,0.8);
+  z-index: 100;
+}
+
+.nav-color {
+  width: 100%;
+  height: 100%;
+  /*background-color: #e7b9ab;*/
+  z-index: -10;
+  position: absolute;
+  top: 0;
+}
+
+.nav-logo {
+  height: 70px;
+  width: 70px;
+  background-image: url("/storage/emulated/0/Pictures/lofo.jpg");
+  background-size: cover;
+  margin-right: 10%;
+  
+}
+
+/*Hero Section*/
+
+.hero-section {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #d27d54;
+  height: 700px;
+  width: 100%;
+  /*background-color: #e7b9ab;*/
+  background-image: url("/storage/emulated/0/Download/lofo_image1_opacity.jpg");
+  background-size: cover;
+  
+}
+
+.oes {
+  font-size: 500px;
+  color: #d3c4b3;
+  position: absolute;
+  z-index: 0;
+  top: 80px;
+}
+
+.hero-box {
+  height: 300px;
+  width: 60%;
+  margin-top: 130px;
+  background-color: rgba(255,255,255,0.3);
+  box-shadow: 0 0 10px #e7b9ab;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.hero-department{
+  background-color: #e7b9ab;
+  height: 30%;
+  width: 80%;
+  justify-items: center;
+  align-content: center;
+  font-size: 2rem;
+  font-weight: 700px;
+  border-radius: 10px;
+}
+
+.hero-tagline {
+  background-color: #e7b9ab;
+  width: 80%;
+  height: 20%;
+  justify-items: center;
+  align-content: center;
+  font-size: 1rem;
+  font-weight: 700px;
+  border-radius: 10px;
+}
+
+/* Found Section */
+
+.found-lost-section {
+  height: 1000px;
+  width: 100%;
+  background-color: rgba(211,196,179,0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.found-lost-text {
+  font-size: 80px;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  padding: 10px;
+  color: #ce8490;
+}
+
+.found-lost-box-container {
+  height: 700px;
+  width: 100%;
+  /*border: 2px solid black;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.found-lost-box {
+  height: 300px;
+  width: 250px;
+  /*border: 2px solid black;*/
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255,255,255,0.4);
+}
+
+.found-lost-box:hover {
+  transform: scale(1.2);
+}
+
+.found-lost-box:active {
+  transform: scale(0.8);
+}
+
+.found-lost-info {
+  margin: 20px;
+}
+
+.found-lost-image {
+  height: 100px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  background-image: url("/storage/emulated/0/Pictures/100PINT/Pins/ring_image.jpg");
+  background-size: cover;
+}
+
+
+
+
+
+
+ 
