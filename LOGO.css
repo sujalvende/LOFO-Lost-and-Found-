@@ -1,3 +1,4 @@
+/* ================= GLOBAL RESET ================= */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,169 +7,522 @@
   color: black;
 }
 
-/*Navbar*/
-
+/* ================= NAVBAR ================= */
 .navbar {
   color: #d27d54;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+
   height: 100px;
   width: 100%;
+
   position: fixed;
   top: 0;
-  box-shadow: 0px 0px 20px #d27d54;
-  background-color: rgba(255,255,255,0.8);
   z-index: 100;
+
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 20px #d27d54;
 }
 
+/* Navbar links */
 .navbar a {
   color: #d27d54;
 }
 
+/* Background color layer for navbar */
 .nav-color {
   width: 100%;
   height: 100%;
-  /*background-color: #e7b9ab;*/
-  z-index: -10;
+
   position: absolute;
   top: 0;
+  z-index: -10;
+
+  /* background-color: #e7b9ab; */
 }
 
+/* Logo image */
 .nav-logo {
   height: 70px;
   width: 70px;
-  background-image: url("/storage/emulated/0/Pictures/lofo.jpg");
-  background-size: cover;
+
   margin-right: 10%;
-  
+
+  font-size: 45px;
+  font-family: sans-serif;
+  color: #d27d54;
 }
 
-/*Hero Section*/
-
+/* ================= HERO SECTION ================= */
 .hero-section {
   margin-top: 100px;
+
+  height: 700px;
+  width: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   border-bottom: 2px solid #d27d54;
-  height: 700px;
-  width: 100%;
-  /*background-color: #e7b9ab;*/
+
   background-image: url("/storage/emulated/0/Download/lofo_image1_opacity.jpg");
   background-size: cover;
-  
+
+  /* background-color: #e7b9ab; */
 }
 
+/* Large background text */
 .oes {
   font-size: 500px;
   color: #d3c4b3;
+
   position: absolute;
-  z-index: 0;
   top: 80px;
+  z-index: 0;
 }
 
+/* Main hero content box */
 .hero-box {
   height: 300px;
   width: 60%;
   margin-top: 130px;
-  background-color: rgba(255,255,255,0.3);
-  box-shadow: 0 0 10px #e7b9ab;
-  border-radius: 10px;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px #e7b9ab;
+  border-radius: 10px;
+
   z-index: 20;
 }
 
-.hero-department{
-  background-color: #e7b9ab;
+/* Department name box */
+.hero-department {
   height: 30%;
   width: 80%;
+
+  background-color: #e7b9ab;
+  border-radius: 10px;
+
   justify-items: center;
   align-content: center;
+
   font-size: 2rem;
   font-weight: 700px;
-  border-radius: 10px;
 }
 
+/* Tagline box */
 .hero-tagline {
-  background-color: #e7b9ab;
-  width: 80%;
   height: 20%;
+  width: 80%;
+
+  background-color: #e7b9ab;
+  border-radius: 10px;
+
   justify-items: center;
   align-content: center;
+
   font-size: 1rem;
   font-weight: 700px;
-  border-radius: 10px;
 }
 
-/* Found Section */
-
+/* ================= FOUND & LOST SECTIONS ================= */
 .found-lost-section {
   height: 1000px;
   width: 100%;
-  background-color: rgba(211,196,179,0.5);
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  background-color: rgba(211, 196, 179, 0.5);
 }
 
+/* Section heading */
 .found-lost-text {
   font-size: 80px;
-  box-shadow: 0 0 10px black;
-  border-radius: 10px;
+
   padding: 10px;
   padding-left: 10%;
   padding-right: 10%;
-  color: #ce8490;
+
+  color: goldenrod;
+
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
 }
 
+/* Container holding item cards */
 .found-lost-box-container {
   height: 700px;
   width: 100%;
-  /*border: 2px solid black;*/
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+
+  /* border: 2px solid black; */
 }
 
+/* Individual item card */
 .found-lost-box {
   height: 300px;
   width: 250px;
-  /*border: 2px solid black;*/
-  border-radius: 10px;
-  box-shadow: 0 0 10px black;
+
+  margin-left: 10px;
+  margin-right: 10px;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255,255,255,0.4);
+
+  background-color: #e7b9ab;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+
+  /* border: 2px solid black; */
 }
 
+/* Hover effect */
 .found-lost-box:hover {
   transform: scale(1.2);
 }
 
+/* Click (active) effect */
 .found-lost-box:active {
-  transform: scale(0.8);
+  
 }
 
+/* Text content inside card */
 .found-lost-info {
   margin: 20px;
 }
 
+/* Item image */
 .found-lost-image {
   height: 100px;
   width: 100%;
-  border: 1px solid black;
+
   margin-bottom: 20px;
+
+  border: 1px solid black;
+
   background-image: url("/storage/emulated/0/Pictures/100PINT/Pins/ring_image.jpg");
   background-size: cover;
+}
+
+
+/* ========== Button Claim ========== */
+
+/* Modal overlay for claim confirmation */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.7);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .claim-modal {
+      background-color: rgba(255,255,255,0.95);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #d27d54;
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+    }
+    
+    .claim-modal h3 {
+      color: #bc6266;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+    
+    .claim-buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .btn-confirm, .btn-cancel {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    
+    .btn-confirm {
+      background-color: #d27d54;
+      color: white;
+    }
+    
+    .btn-confirm:hover {
+      background-color: #bc6266;
+      transform: scale(1.05);
+    }
+    
+    .btn-cancel {
+      background-color: #e7b9ab;
+      color: #333;
+    }
+    
+    .btn-cancel:hover {
+      background-color: #d3c4b3;
+      transform: scale(1.05);
+    }
+    
+    .claim-btn {
+      background-color: #bc6266 !important;
+      color: white !important;
+      padding: 8px 16px !important;
+      font-size: 14px !important;
+      margin-top: 10px !important;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    
+    .claim-btn:hover {
+      background-color: #d27d54 !important;
+      transform: scale(1.05);
+    }
+
+
+
+
+/* ========== Report Section ========== */
+
+.report-section {
+  height: 685px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/storage/emulated/0/Download/lofo_image2.png");
+}
+
+.report-card {
+  height: 70%;
+  width: 60%;
+  box-shadow: 0 0 10px #d27d54;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.report-text {
+  font-size: 45px;
+  color: #bc6266;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.report-form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.report-form input {
+  height: 45px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #e7b9ab;
+}
+
+.report-form input::placeholder {
+  color: #333;
+}
+
+.report-form select {
+  height: 45px;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #e7b9ab;
+  border: none;
+  outline: none;
+}
+
+/* Submit Button */
+.report-form button {
+  height: 45px;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #d27d54;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.report-form button:hover {
+  background-color: #bc6266;
+  transform: scale(1.05);
+}
+
+
+/* ========== About Section ========== */
+
+.about-section {
+  height: 520px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(211, 196, 179, 0.6);
+}
+
+/* About Card */
+.about-card {
+  height: 60%;
+  width: 60%;
+  box-shadow: 0 0 10px #bc6266;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.about-text {
+  margin: 10px;
+  font-size: 50px;
+  color: #bc6266;
+}
+
+.about-info {
+  border-radius: 10px;
+  width: 80%;
+  height: 60%;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 10px;
+  background-color: #e7b9ab;
+}
+
+/* ========== Contact Section ========== */
+
+.contact-section {
+  height: 520px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/storage/emulated/0/Download/lofo_image3.png");
+  background-size: cover;
+}
+
+.contact-card {
+  height: 60%;
+  width: 60%;
+  box-shadow: 0 0 10px #e7b9ab;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255,255,255,0.2);
+  background-size: cover;
+}
+
+.contact-text {
+  margin: 10px;
+  font-size: 50px;
+  color: #bc6266;
+}
+
+.contact-info {
+  border-radius: 10px;
+  width: 80%;
+  height: 60%;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 10px;
+  background-color: #e7b9ab;
+}
+
+/* ========== Footer ========== */
+
+.footer {
+  background-color: #d3c4b3;
+  padding: 40px 0 0 0;
+  box-shadow: 0 -5px 15px rgba(0,0,0,0.2);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.footer-box {
+  width: 250px;
+  margin: 15px;
+}
+
+.footer-box h3 {
+  margin-bottom: 15px;
+  color: #bc6266;
+  font-size: 22px;
+}
+
+.footer-box p,
+.footer-box a {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.footer-box a {
+  display: block;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.footer-box a:hover {
+  color: #d27d54;
+  transform: translateX(5px);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  margin-top: 20px;
+  padding: 15px;
+  text-align: center;
+  background-color: #d27d54;
+  color: white;
+  font-size: 14px;
 }
 
 
