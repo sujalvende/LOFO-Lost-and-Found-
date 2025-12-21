@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-
 <html>
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>Hello, World!</title>
-  <link rel="stylesheet" href="lostandfound.css">
-  <!--<link rel="stylesheet" href="responsive_lofo.css">-->
+  <title>LOFO</title>
+  <link rel="stylesheet" href="LOFO.css">
 </head>
+
 <body>
-  
+  <!-- ================= HEADER ================= -->
   <header>
-    
     <div class="navbar">
-      
-      <div class="nav-logo"></div>
+      <div class="nav-logo">LOFO</div>
       <a class="nav-home" href="#home">Home</a>
       <a class="nav-about" href="#about">About</a>
       <a class="nav-found" href="#found">Found</a>
@@ -22,173 +19,122 @@
       <a class="nav-contact" href="#contact">Contact</a>
       <div class="nav-color"></div>
     </div>
-    
   </header>
-  
+
+  <!-- ================= MAIN CONTENT ================= -->
   <main>
-    
+    <!-- Hero Section -->
     <div class="hero-section" id="home">
       <p class="oes">OES</p>
       <div class="hero-box">
-        
         <div class="hero-department">
           <p>Department of Lost and Found</p>
         </div>
-        
         <div class="hero-tagline">
           <p>Find what you lost. Return what you found</p>
         </div>
-        
       </div>
-      
     </div>
-    
-    
+
+    <!-- Dynamic Found Items Section -->
     <div class="found-lost-section" id="found">
-      
       <h1 class="found-lost-text">Found Items</h1>
-      <div class="found-lost-box-container">
-        
-        <div class="found-lost-box">
-          <div class="found-lost-info">
-            <div class="found-lost-image"></div>
-            <p>Name: Ring</p>
-            <p>Type: Metal</p>
-            <p>Location: Class 103</p>
-            <p>Date: 20/08/2025</p>
-          </div>
-        </div>
-        
-        <div class="found-lost-box">
-          <div class="found-lost-info">
-            <div class="found-lost-image"></div>
-            <p>Name: Ring</p>
-            <p>Type: Metal</p>
-            <p>Location: Class 103</p>
-            <p>Date: 20/08/2025</p>
-          </div>
-        </div>
-        
-        <div class="found-lost-box">
-          <div class="found-lost-info">
-            <div class="found-lost-image"></div>
-            <p>Name: Ring</p>
-            <p>Type: Metal</p>
-            <p>Location: Class 103</p>
-            <p>Date: 20/08/2025</p>
-          </div>
-        </div>
-        
-        <div class="found-lost-box">
-          <div class="found-lost-info">
-            <div class="found-lost-image"></div>
-            <p>Name: Ring</p>
-            <p>Type: Metal</p>
-            <p>Location: Class 103</p>
-            <p>Date: 20/08/2025</p>
-          </div>
-        </div>
-        
-        <div class="found-lost-box">
-          <div class="found-lost-info">
-            <div class="found-lost-image"></div>
-            <p>Name: Ring</p>
-            <p>Type: Metal</p>
-            <p>Location: Class 103</p>
-            <p>Date: 20/08/2025</p>
-          </div>
-        </div>
-        
-        <div class="found-lost-box">
-          <div class="found-lost-info">
-            <div class="found-lost-image"></div>
-            <p>Name: Ring</p>
-            <p>Type: Metal</p>
-            <p>Location: Class 103</p>
-            <p>Date: 20/08/2025</p>
-          </div>
-        </div>
-        
+      <div class="found-lost-box-container" id="foundItemsContainer">
+        <!-- Dynamic cards will be added here -->
       </div>
-      
     </div>
-    
-    <!--Lost Section-->
-    
+
+    <!-- Dynamic Lost Items Section -->
     <div class="found-lost-section" id="lost">
-      
       <h1 class="found-lost-text">Lost Items</h1>
-      <div class="found-lost-box-container">
-        
-        <div class="found-lost-box">
-          <div class="found-lost-info">
-            <div class="found-lost-image"></div>
-            <p>Name: Ring</p>
-            <p>Type: Metal</p>
-            <p>Location: Class 103</p>
-            <p>Date: 20/08/2025</p>
-          </div>
-        </div>
-        
-        <div class="found-lost-box">
-          <div class="found-lost-info">
-            <div class="found-lost-image"></div>
-            <p>Name: Ring</p>
-            <p>Type: Metal</p>
-            <p>Location: Class 103</p>
-            <p>Date: 20/08/2025</p>
-          </div>
-        </div>
-        
-        <div class="found-lost-box">
-          <div class="found-lost-info">
-            <div class="found-lost-image"></div>
-            <p>Name: Ring</p>
-            <p>Type: Metal</p>
-            <p>Location: Class 103</p>
-            <p>Date: 20/08/2025</p>
-          </div>
-        </div>
-        
-        <div class="found-lost-box">
-          <div class="found-lost-info">
-            <div class="found-lost-image"></div>
-            <p>Name: Ring</p>
-            <p>Type: Metal</p>
-            <p>Location: Class 103</p>
-            <p>Date: 20/08/2025</p>
-          </div>
-        </div>
-        
-        <div class="found-lost-box">
-          <div class="found-lost-info">
-            <div class="found-lost-image"></div>
-            <p>Name: Ring</p>
-            <p>Type: Metal</p>
-            <p>Location: Class 103</p>
-            <p>Date: 20/08/2025</p>
-          </div>
-        </div>
-        
-        <div class="found-lost-box">
-          <div class="found-lost-info">
-            <div class="found-lost-image"></div>
-            <p>Name: Ring</p>
-            <p>Type: Metal</p>
-            <p>Location: Class 103</p>
-            <p>Date: 20/08/2025</p>
-          </div>
-        </div>
-        
+      <div class="found-lost-box-container" id="lostItemsContainer">
+        <!-- Dynamic cards will be added here -->
       </div>
-      
     </div>
-    
+
+    <!-- Report Section -->
+    <div class="report-section" id="report">
+      <div class="report-card">
+        <h1 class="report-text">Report an Item</h1>
+        <form class="report-form" id="reportForm">
+          <select id="itemType" required>
+            <option value="">Select Type</option>
+            <option value="lost">Lost Item</option>
+            <option value="found">Found Item</option>
+          </select>
+          
+          <input type="text" id="itemName" placeholder="Item Name" required>
+          <input type="text" id="itemTypeDetail" placeholder="Item Type (e.g., Metal, Plastic)" required>
+          <input type="text" id="itemLocation" placeholder="Found / Lost Location" required>
+          <input type="date" id="itemDate" required>
+          
+          <input type="file" id="itemImage" accept="image/*" required>
+          
+          <button type="submit">Submit Report</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- About, Contact sections remain same -->
+    <div class="about-section" id="about">
+      <div class="about-card">
+        <h1 class="about-text">About Us</h1>
+        <p class="about-info">
+          LOFO (Lost & Found Office System) is a dedicated college platform designed to help students, faculty, and staff report, find, and return lost belongings on campus. It ensures a transparent and organized process to reconnect items with their rightful owners. To maintain honesty and trust, providing false information or falsely claiming ownership of any found item is a serious violation. Anyone found doing so will be penalized with a fine equal to two times the cost of the item, helping keep the system fair and reliable for everyone.
+        </p>
+      </div>
+    </div>
+
+    <div class="contact-section" id="contact">
+      <div class="contact-card">
+        <h1 class="contact-text">Contact Us</h1>
+        <p class="contact-info">
+          If you have lost an item, found something on campus, or need assistance with the LOFO platform, feel free to reach out to us. You can contact the Lost & Found Office through the provided details or visit the office during working hours. Our team is always ready to help ensure lost belongings are returned safely and promptly. For any queries, reports, or support, we encourage you to connect with us and help keep our campus honest and organized.
+        </p>
+      </div>
+    </div>
   </main>
-  
-  <footer>
-    
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-box">
+        <h3>LOFO</h3>
+        <p>LOFO is a college-based Lost & Found system helping students and staff reconnect with their lost belongings in a transparent and reliable way.</p>
+      </div>
+      <div class="footer-box">
+        <h3>Quick Links</h3>
+        <a href="#home">Home</a>
+        <a href="#found">Found Items</a>
+        <a href="#lost">Lost Items</a>
+        <a href="#report">Report Item</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-box">
+        <h3>Contact</h3>
+        <p>Lost & Found Office</p>
+        <p>Working Hours: 9 AM – 5 PM</p>
+        <p>Email: lofo@college.edu</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 LOFO | All Rights Reserved</p>
+    </div>
   </footer>
+
+  <!-- Claim Confirmation Modal -->
+  <div class="modal-overlay" id="claimModal">
+    <div class="claim-modal">
+      <h3>Claim Item?</h3>
+      <p>Are you sure you want to claim this item? It will be removed from the list.</p>
+      <div class="claim-buttons">
+        <button class="btn-confirm" id="confirmClaim">Yes, Claim It</button>
+        <button class="btn-cancel" id="cancelClaim">Cancel</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="LOFO.js"></script>
   
 </body>
 </html>
